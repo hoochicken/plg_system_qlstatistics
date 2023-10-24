@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="system" method="upgrade">
+    <name>PLG_SYSTEM_QLSTATISTICS</name>
+    <author>Ingo Holewczuk; Mareike Riegel</author>
+    <creationDate>2024</creationDate>
+    <copyright>Copyright (C) 2024 ql.de All rights reserved.</copyright>
+    <authorEmail>mareike.riegel@ql.de</authorEmail>
+    <authorUrl>http://www.ql.de/</authorUrl>
+    <version>1.0.1</version>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <description>PLG_SYSTEM_QLSTATISTICS_DESCRIPTION</description>
+    <files>
+        <filename plugin="qlstatistics">qlstatistics.php</filename>
+        <filename plugin="qlstatistics">index.html</filename>
+        <filename plugin="qlstatistics">license.txt</filename>
+        <folder plugin="qlstatistics">language</folder>
+    </files>
+    <media folder="media" destination="plg_system_qlstatistics">
+        <folder>css</folder>
+        <folder>js</folder>
+    </media>
+    <languages>
+        <language tag="en-GB">language/en-GB/en-GB.plg_system_qlstatistics.ini</language>
+        <language tag="en-GB">language/en-GB/en-GB.plg_system_qlstatistics.sys.ini</language>
+    </languages>
+	<config>
+		<fields name="params">
+            <fieldset name="basic">
+                <field name="jquery" type="radio"
+                       default="1"
+                       class="btn-group"
+                       label="PLG_SYSTEM_QLSTATISTICS_JQUERY_LABEL"
+                       description="PLG_SYSTEM_QLSTATISTICS_JQUERY_DESC"
+                        >
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+            </fieldset>
+		</fields>
+	</config>
+</extension>
