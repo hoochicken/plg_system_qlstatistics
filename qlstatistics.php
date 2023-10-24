@@ -8,15 +8,16 @@
 
 //no direct access
 use Joomla\CMS\Factory;
-use Joomla\CMS\HTML\HTMLHelper;
+use Joomla\CMS\Plugin\CMSPlugin;
 
 defined('_JEXEC') or die ('Restricted Access');
 
 jimport('joomla.plugin.plugin');
 
-class plgSystemQlstatistics extends JPlugin
+class plgSystemQlstatistics extends CMSPlugin
 {
-    public \Joomla\Registry\Registry $params;
+    /** @var \Joomla\Registry\Registry $params */
+    public $params;
     public array $data;
 
     public function __construct(& $subject, $config)
@@ -26,21 +27,22 @@ class plgSystemQlstatistics extends JPlugin
         parent::__construct($subject, $config);
     }
 
-    public function includeScripts()
-    {
-        if ($this->params->get('jquery', false)) {
-            HTMLHelper::_('jquery.framework');
-        }
-        $wa = Factory::getApplication()->getDocument()->getWebAssetManager();
-        $wa->registerAndUseStyle('plg_system_qlstatistics', 'plg_system_qlstatistics/qlstatistics.css');
-        $wa->registerAndUseScript('plg_system_qlstatistics', 'plg_system_qlstatistics/qlstatistics.js');
-    }
 
-    /**
-     * 
-     */
     public function onAfterRender()
     {
+        $app = Factory::getApplication();
+        if ($app->isClient('admin')) {
+            return;
+        }
+
+        $active = $app->getMenu()->getActive();
+
+        $data = [
+            'menu_item_id' => $active->id,
+            'link' => $active->link,
+            'type' => $active->component,
+            'component' => $active->component,
+        ];
 
     }
 }
