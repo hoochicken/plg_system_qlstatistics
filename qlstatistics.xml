@@ -35,6 +35,17 @@
                     <option value="1">JYES</option>
                     <option value="0">JNO</option>
                 </field>
+                <field name="area" type="radio"
+                       default="site"
+                       class="btn-group"
+                       label="PLG_SYSTEM_QLSTATISTICS_AREA_LABEL"
+                       description="PLG_SYSTEM_QLSTATISTICS_AREA_DESC"
+                        >
+                    <option value="none">JNONE</option>
+                    <option value="site">PLG_SYSTEM_QLSTATISTICS_SITE</option>
+                    <option value="administrator">PLG_SYSTEM_QLSTATISTICS_ADMIN</option>
+                    <option value="both">PLG_SYSTEM_QLSTATISTICS_BOTH</option>
+                </field>
             </fieldset>
 		</fields>
 	</config>

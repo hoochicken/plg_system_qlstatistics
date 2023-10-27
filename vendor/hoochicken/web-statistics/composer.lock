@@ -1,0 +1,104 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "9fab363b3af846fcd72927fa13667aea",
+    "packages": [
+        {
+            "name": "hoochicken/dbtable",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hoochicken/dbtable.git",
+                "reference": "e15e6c45a4d31033e49e54485a740f5a79d3bea1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hoochicken/dbtable/zipball/e15e6c45a4d31033e49e54485a740f5a79d3bea1",
+                "reference": "e15e6c45a4d31033e49e54485a740f5a79d3bea1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Hoochicken\\Dbtable\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mareike Riegel",
+                    "email": "info@ql.de"
+                }
+            ],
+            "description": "Display content of database table",
+            "support": {
+                "issues": "https://github.com/hoochicken/dbtable/issues",
+                "source": "https://github.com/hoochicken/dbtable/tree/v1.0.3"
+            },
+            "time": "2023-09-16T20:16:05+00:00"
+        },
+        {
+            "name": "hoochicken/parameter-bag",
+            "version": "v1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hoochicken/parameter-bag.git",
+                "reference": "78cb7f11ff5827c87e01e1867f3a166e0567693f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hoochicken/parameter-bag/zipball/78cb7f11ff5827c87e01e1867f3a166e0567693f",
+                "reference": "78cb7f11ff5827c87e01e1867f3a166e0567693f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Hoochicken\\ParameterBag\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mareike Riegel",
+                    "email": "info@ql.de"
+                }
+            ],
+            "description": "Parameter bag",
+            "support": {
+                "issues": "https://github.com/hoochicken/parameter-bag/issues",
+                "source": "https://github.com/hoochicken/parameter-bag/tree/v1.2.1"
+            },
+            "time": "2023-05-24T19:50:56+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "hoochicken/dbtable": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=8.0"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "2.2.0"
+}

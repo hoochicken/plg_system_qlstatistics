@@ -1,3 +1,7 @@
 {
 
+    "require": {
+        "hoochicken/web-statistics": "^1.0",
+        "hoochicken/dbtable": "^1.0"
+    }
 }

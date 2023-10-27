@@ -1,0 +1,23 @@
+{
+    "name": "hoochicken/web-statistics",
+    "description": "build web statistics",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mareike Riegel",
+            "email": "info@ql.de"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=8.0",
+        "hoochicken/parameter-bag": "^1.0",
+        "hoochicken/dbtable": "dev-main"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hoochicken\\WebStatistics\\": "src",
+            "Hoochicken\\Dbtable\\": "src"
+        }
+    }
+}
