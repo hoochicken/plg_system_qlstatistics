@@ -6,7 +6,7 @@
     <copyright>Copyright (C) 2024 ql.de All rights reserved.</copyright>
     <authorEmail>mareike.riegel@ql.de</authorEmail>
     <authorUrl>http://www.ql.de/</authorUrl>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
     <description>PLG_SYSTEM_QLSTATISTICS_DESCRIPTION</description>
     <files>
@@ -20,10 +20,10 @@
         <folder plugin="qlstatistics">language</folder>
         <folder plugin="qlstatistics">vendor</folder>
     </files>
-    <media folder="media" destination="plg_system_qlstatistics">
+    <!--media folder="media" destination="plg_system_qlstatistics">
         <folder>css</folder>
         <folder>js</folder>
-    </media>
+    </media-->
     <languages>
         <language tag="en-GB">language/en-GB/en-GB.plg_system_qlstatistics.ini</language>
         <language tag="en-GB">language/en-GB/en-GB.plg_system_qlstatistics.sys.ini</language>
