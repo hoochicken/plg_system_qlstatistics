@@ -10,10 +10,15 @@
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
     <description>PLG_SYSTEM_QLSTATISTICS_DESCRIPTION</description>
     <files>
-        <filename plugin="qlstatistics">qlstatistics.php</filename>
+        <filename plugin="qlstatistics">README.md</filename>
+        <filename plugin="qlstatistics">composer.json</filename>
+        <filename plugin="qlstatistics">composer.lock</filename>
         <filename plugin="qlstatistics">index.html</filename>
         <filename plugin="qlstatistics">license.txt</filename>
+        <filename plugin="qlstatistics">qlstatistics.php</filename>
+        <filename plugin="qlstatistics">qlstatistics.xml</filename>
         <folder plugin="qlstatistics">language</folder>
+        <folder plugin="qlstatistics">vendor</folder>
     </files>
     <media folder="media" destination="plg_system_qlstatistics">
         <folder>css</folder>
